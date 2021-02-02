@@ -17,8 +17,8 @@
 ##Step 1
 ##Code for reading in the dataset and/or processing the data
 ```{r, echo = TRUE}
-setwd("C:/Users/Shengyu Chen/Dropbox/Academics/Coursera/Data Science Specialization/Reproducible Research/Course Project 1")
-activity<-read.csv("activity.csv")
+data <- read.csv("activity.csv", header = TRUE, sep = ',', colClasses = c("numeric", "character",
+                                                                          "integer"))
 ```
 
 Exploring the basics of this data
